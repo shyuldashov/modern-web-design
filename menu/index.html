@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Web Menu</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <section class="menu__container">
+        <h1 class="menu__logo">Linux</h1>
+
+        <ul class="menu__links">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item menu__item--show">
+            <a href="#" class="menu__link"
+              >Blog
+              <img
+                src="assets/arrow.svg"
+                class="menu__arrow"
+                alt="arrow-icon"
+              />
+            </a>
+            <ul class="menu__nesting">
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Kali</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Debian</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Ubuntu</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__item--show">
+            <a href="#" class="menu__link"
+              >Tools
+              <img
+                src="assets/arrow.svg"
+                class="menu__arrow"
+                alt="arrow-icon"
+              />
+            </a>
+            <ul class="menu__nesting">
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Terminal</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">GIMP</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Leafpad</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Gallery</a>
+          </li>
+        </ul>
+
+        <div class="menu__hamburger">
+          <img src="assets/menu.svg" class="menu__img" alt="menu-icon" />
+        </div>
+      </section>
+    </nav>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
